@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test
 internal class ExampleTest {
     @Test
     fun `Adds arguments`() {
-        assertEquals(Example().add(1, 2), 3)
+        val firstTerm = aSmallInt()
+        val secondTerm = aSmallInt()
+        assertEquals(Example().add(firstTerm, secondTerm), firstTerm + secondTerm)
     }
 }

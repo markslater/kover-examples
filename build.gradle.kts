@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.6.0"
+    `java-test-fixtures`
     id("org.jetbrains.kotlinx.kover") version "0.4.4"
 }
 
