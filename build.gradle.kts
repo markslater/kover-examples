@@ -18,4 +18,7 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform {}
+    extensions.configure(kotlinx.kover.api.KoverTaskExtension::class) {
+        isDisabled = true
+    }
 }
