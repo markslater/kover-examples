@@ -1,9 +1,15 @@
 package com.example
 
 class Example {
-    fun myFunction(foo: Foo) = when(foo) {
-        Foo.Bar -> "It's Bar"
-        Foo.Baz -> "It's Baz"
+    fun myFunction(foo: Foo, callback: (String) -> Unit) {
+        when(foo) {
+            Foo.Bar -> {
+                callback("It's Bar")
+            }
+            Foo.Baz -> {
+                callback("It's Baz")
+            }
+        }
     }
 }
 
