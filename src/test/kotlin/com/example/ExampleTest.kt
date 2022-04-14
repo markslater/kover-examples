@@ -5,7 +5,12 @@ import org.junit.jupiter.api.Test
 
 internal class ExampleTest {
     @Test
-    fun `Adds arguments`() {
-        assertEquals(Example().add(1, 2), 3)
+    fun `Works with Bar`() {
+        assertEquals(Example().myFunction(Foo.Bar), "It's Bar")
+    }
+
+    @Test
+    fun `Works with Baz`() {
+        assertEquals(Example().myFunction(Foo.Baz), "It's Baz")
     }
 }
