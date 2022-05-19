@@ -1,5 +1,5 @@
 package com.example
 
 class Example {
-    fun add(left: Int, right: Int) = left + right
+    fun nullableToString(value: Any?) = value?.toString() ?: "null"
 }

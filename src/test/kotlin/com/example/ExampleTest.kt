@@ -5,7 +5,12 @@ import org.junit.jupiter.api.Test
 
 internal class ExampleTest {
     @Test
-    fun `Adds arguments`() {
-        assertEquals(Example().add(1, 2), 3)
+    fun `Handles non-null value`() {
+        assertEquals(Example().nullableToString("Foo"), "Foo")
+    }
+
+    @Test
+    fun `Handles null value`() {
+        assertEquals(Example().nullableToString(null), "null")
     }
 }
